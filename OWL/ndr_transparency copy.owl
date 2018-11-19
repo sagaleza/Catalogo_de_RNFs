@@ -1,0 +1,623 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ndr="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#">
+  <owl:Ontology rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl"/>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Argumentation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ImplicitInterdependency">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ExplicitInterdependency">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgSoftgoal">
+    <rdfs:subClassOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Argumentation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#AllDifferent">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperDecomposition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Decomposition"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Claim">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Label">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <owl:Label rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Weakly_satisficed">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Label>
+          <owl:Label rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Weakly">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Label>
+          <owl:Label rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Undecided">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Label>
+          <owl:Label rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Satisficed">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Label>
+          <owl:Label rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Weakly_denied">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Label>
+          <owl:Label rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Denied">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Label>
+          <owl:Label rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Conflict">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Label>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgInterdependency">
+    <rdfs:subClassOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Argumentation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRDecomposition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Decomposition"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operationalization">
+    <rdfs:subClassOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ExplicitInterdependency"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal">
+    <rdfs:subClassOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Correlation">
+    <rdfs:subClassOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ImplicitInterdependency"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Type">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Contribution">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Break">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Unknown">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Some-">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Hurt">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Or">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Some+">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#And">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+          <owl:Contribution rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Equal">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </owl:Contribution>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Decomposition">
+    <rdfs:subClassOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ExplicitInterdependency"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal">
+    <rdfs:subClassOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationHead">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#head"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Correlation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#hasSubType">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#isSubTypeOf"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Type"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalHead">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationHead"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#label">
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Label"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationTail">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tail"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operationalization"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecHead">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#head"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationHeadInv">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#headInv"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationHead"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Correlation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationTailInv">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationTail"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operationalization"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#contributionKind">
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Contribution"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecTail">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tail"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecHead">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#head"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalTailInv">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalTail"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Claim"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecHeadInv">
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecHead"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#headInv"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#isSubTypeOf">
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Type"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalHeadInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#headInv"/>
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalHead"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecTail">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tail"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecHeadInv">
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecHead"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#headInv"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationHead">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationHeadInv"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#head"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operationalization"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementTailInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Claim"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgInterdependency"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementHeadInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#headInv"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgInterdependency"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecTailInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv"/>
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecTail"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#isTypeOf"/>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#type">
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#isLabelOf">
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#label"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Label"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationKind">
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Contribution"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Argumentation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalTail">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tail"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Claim"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementTail">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tail"/>
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementTailInv"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Claim"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgInterdependency"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#contributionKindInv">
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#contributionKind"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Contribution"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationTailInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationTail"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Correlation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationHead">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#head"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationTail">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tail"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Correlation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecTailInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv"/>
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecTail"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRDecomposition"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationHeadInv">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#headInv"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operationalization"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationKindInv">
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationKind"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Contribution"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Argumentation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementHead">
+    <rdfs:subPropertyOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#head"/>
+    <owl:inverseOf rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementHeadInv"/>
+    <rdfs:range rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgInterdependency"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#topic">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#priority">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal"/>
+  </owl:DatatypeProperty>
+  <owl:Correlation rdf:ID="UH_correlation1">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Data_Collection_and_Use"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Availability"/>
+  </owl:Correlation>
+  <owl:NFR_Type rdf:ID="NFR_Accessbility">
+    <rdfs:label>NFR_Accessbility</rdfs:label>
+  </owl:NFR_Type>
+  <owl:NFRSoftgoal rdf:ID="UH_Understandability">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Understandability"/>
+    <rdfs:label>Understandability</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:Operationalization rdf:ID="UH_operationalization3">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Completeness"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Informativeness"/>
+  </owl:Operationalization>
+  <owl:OperSoftgoal rdf:ID="UH_Availability">
+    <rdfs:label>Availability</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:OperSoftgoal rdf:ID="UH_Integrity">
+    <rdfs:label>Integrity</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:NFRDecomposition rdf:ID="UH_nfrdec5">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:nfrDecTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Understandability"/>
+    <owl:nfrDecHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Transparency"/>
+  </owl:NFRDecomposition>
+  <owl:Correlation rdf:ID="UH_correlation10">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Storage"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Completeness"/>
+  </owl:Correlation>
+  <owl:NFRSoftgoal rdf:ID="UH_Storage">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Storage"/>
+    <rdfs:label>Storage</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:Correlation rdf:ID="UH_correlation9">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Storage"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Availability"/>
+  </owl:Correlation>
+  <owl:Operationalization rdf:ID="UH_operationalization2">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Portability"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Accessbility"/>
+  </owl:Operationalization>
+  <owl:NFR_Type rdf:ID="NFR_Informativeness">
+    <rdfs:label>NFR_Informativeness</rdfs:label>
+  </owl:NFR_Type>
+  <owl:OperSoftgoal rdf:ID="UH_Current">
+    <rdfs:label>Current</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:NFRSoftgoal rdf:ID="UH_Data_Collection_and_Use">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Data_Collection_and_Use"/>
+    <rdfs:label>Data Collection and Use</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:Correlation rdf:ID="UH_correlation8">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Cloud"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Externability"/>
+  </owl:Correlation>
+  <owl:NFR_Type rdf:ID="NFR_Exposure_to_Personal_Information">
+    <rdfs:label>NFR_Exposure to Personal Information</rdfs:label>
+  </owl:NFR_Type>
+  <owl:NFRSoftgoal rdf:ID="UH_Exposure_to_Personal_Information">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Exposure_to_Personal_Information"/>
+    <rdfs:label>Exposure to Personal Information</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:NFR_Type rdf:ID="NFR_Usability">
+    <rdfs:label>NFR_Usability</rdfs:label>
+  </owl:NFR_Type>
+  <owl:Correlation rdf:ID="UH_correlation16">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Hurt"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Anonymity"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operability"/>
+  </owl:Correlation>
+  <owl:Operationalization rdf:ID="UH_operationalization5">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Current"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Informativeness"/>
+  </owl:Operationalization>
+  <owl:NFR_Type rdf:ID="NFR_Anonymity">
+    <rdfs:label>NFR_Anonymity</rdfs:label>
+  </owl:NFR_Type>
+  <owl:Correlation rdf:ID="UH_correlation7">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Cloud"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Decomposability"/>
+  </owl:Correlation>
+  <owl:Correlation rdf:ID="UH_correlation15">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Hurt"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Anonymity"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Completeness"/>
+  </owl:Correlation>
+  <owl:Operationalization rdf:ID="UH_operationalization4">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Integrity"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Informativeness"/>
+  </owl:Operationalization>
+  <owl:NFR_Type rdf:ID="NFR_Auditing">
+    <rdfs:label>NFR_Auditing</rdfs:label>
+  </owl:NFR_Type>
+  <owl:NFRSoftgoal rdf:ID="UH_Accessbility">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Accessbility"/>
+    <rdfs:label>Accessbility</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:OperSoftgoal rdf:ID="UH_Completeness">
+    <rdfs:label>Completeness</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:Correlation rdf:ID="UH_correlation6">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Cloud"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Clarity"/>
+  </owl:Correlation>
+  <owl:Correlation rdf:ID="UH_correlation5">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Cloud"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Portability"/>
+  </owl:Correlation>
+  <owl:OperSoftgoal rdf:ID="UH_Externability">
+    <rdfs:label>Externability</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:NFR_Type rdf:ID="NFR_Cloud">
+    <rdfs:label>NFR_Cloud</rdfs:label>
+  </owl:NFR_Type>
+  <owl:NFRSoftgoal rdf:ID="UH_Anonymity">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Anonymity"/>
+    <rdfs:label>Anonymity</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:Operationalization rdf:ID="UH_operationalization7">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operability"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Usability"/>
+  </owl:Operationalization>
+  <owl:NFR_Type rdf:ID="NFR_Transparency">
+    <rdfs:label>NFR_Transparency</rdfs:label>
+  </owl:NFR_Type>
+  <owl:Correlation rdf:ID="UH_correlation14">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Exposure_to_Personal_Information"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Completeness"/>
+  </owl:Correlation>
+  <owl:NFRSoftgoal rdf:ID="UH_Informativeness">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Informativeness"/>
+    <rdfs:label>Informativeness</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:Correlation rdf:ID="UH_correlation4">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Cloud"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Availability"/>
+  </owl:Correlation>
+  <owl:NFR_Type rdf:ID="NFR_Storage">
+    <rdfs:label>NFR_Storage</rdfs:label>
+  </owl:NFR_Type>
+  <owl:NFRSoftgoal rdf:ID="UH_Transparency">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Transparency"/>
+    <rdfs:label>Transparency</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:NFRDecomposition rdf:ID="UH_nfrdec1">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:nfrDecTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Accessbility"/>
+    <owl:nfrDecHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Transparency"/>
+  </owl:NFRDecomposition>
+  <owl:Operationalization rdf:ID="UH_operationalization6">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Clarity"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Informativeness"/>
+  </owl:Operationalization>
+  <owl:NFRDecomposition rdf:ID="UH_nfrdec2">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:nfrDecTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Informativeness"/>
+    <owl:nfrDecHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Transparency"/>
+  </owl:NFRDecomposition>
+  <owl:NFRSoftgoal rdf:ID="UH_Usability">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Usability"/>
+    <rdfs:label>Usability</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:OperSoftgoal rdf:ID="UH_Decomposability">
+    <rdfs:label>Decomposability</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:Correlation rdf:ID="UH_correlation13">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Exposure_to_Personal_Information"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Portability"/>
+  </owl:Correlation>
+  <owl:NFRSoftgoal rdf:ID="UH_Auditing">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Auditing"/>
+    <rdfs:label>Auditing</rdfs:label>
+  </owl:NFRSoftgoal>
+  <owl:Correlation rdf:ID="UH_correlation3">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Data_Collection_and_Use"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Integrity"/>
+  </owl:Correlation>
+  <owl:Operationalization rdf:ID="UH_operationalization1">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Availability"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Accessbility"/>
+  </owl:Operationalization>
+  <owl:NFR_Type rdf:ID="NFR_Understandability">
+    <rdfs:label>NFR_Understandability</rdfs:label>
+  </owl:NFR_Type>
+  <owl:Operationalization rdf:ID="UH_operationalization9">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Externability"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Understandability"/>
+  </owl:Operationalization>
+  <owl:NFRDecomposition rdf:ID="UH_nfrdec3">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:nfrDecTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Usability"/>
+    <owl:nfrDecHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Transparency"/>
+  </owl:NFRDecomposition>
+  <owl:Correlation rdf:ID="UH_correlation12">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Exposure_to_Personal_Information"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Availability"/>
+  </owl:Correlation>
+  <owl:OperSoftgoal rdf:ID="UH_Operability">
+    <rdfs:label>Operability</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:OperSoftgoal rdf:ID="UH_Portability">
+    <rdfs:label>Portability</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:Correlation rdf:ID="UH_correlation2">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Data_Collection_and_Use"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Completeness"/>
+  </owl:Correlation>
+  <owl:OperSoftgoal rdf:ID="UH_Clarity">
+    <rdfs:label>Clarity</rdfs:label>
+  </owl:OperSoftgoal>
+  <owl:Operationalization rdf:ID="UH_operationalization8">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Help"/>
+    <owl:operationalizationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Decomposability"/>
+    <owl:operationalizationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Understandability"/>
+  </owl:Operationalization>
+  <owl:NFRDecomposition rdf:ID="UH_nfrdec4">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:nfrDecTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Auditing"/>
+    <owl:nfrDecHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Transparency"/>
+  </owl:NFRDecomposition>
+  <owl:NFR_Type rdf:ID="NFR_Data_Collection_and_Use">
+    <rdfs:label>NFR_Data Collection and Use</rdfs:label>
+  </owl:NFR_Type>
+  <owl:Correlation rdf:ID="UH_correlation11">
+    <owl:contributionKind rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Make"/>
+    <owl:correlationTail rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Storage"/>
+    <owl:correlationHead rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Current"/>
+  </owl:Correlation>
+  <owl:NFRSoftgoal rdf:ID="UH_Cloud">
+    <owl:topic></owl:topic>
+    <owl:type rdf:resource="http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Cloud"/>
+    <rdfs:label>Cloud</rdfs:label>
+  </owl:NFRSoftgoal>
+</rdf:RDF>

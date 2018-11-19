@@ -1,0 +1,1384 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.1.4), http://vowl.visualdataweb.org",
+  "namespace" : [ { } ],
+  "header" : {
+    "languages" : [ "IRI-based" ],
+    "title" : { },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl",
+    "author" : [ ],
+    "description" : { },
+    "seeAlso" : [ ],
+    "issued" : [ ],
+    "license" : [ ],
+    "rdfsLabel" : [ ],
+    "other" : { }
+  },
+  "metrics" : {
+    "classCount" : 22,
+    "datatypeCount" : 3,
+    "objectPropertyCount" : 40,
+    "datatypePropertyCount" : 3,
+    "propertyCount" : 43,
+    "nodeCount" : 25,
+    "axiomCount" : 234,
+    "individualCount" : 17
+  },
+  "class" : [ {
+    "id" : "class20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class6",
+    "type" : "externalclass"
+  }, {
+    "id" : "class10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class8",
+    "type" : "externalclass"
+  }, {
+    "id" : "class15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class7",
+    "type" : "externalclass"
+  }, {
+    "id" : "class9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class12",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "thing1",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "id" : "class20",
+    "label" : {
+      "IRI-based" : "Operationalization"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Operationalization",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class5" ]
+  }, {
+    "id" : "class6",
+    "label" : {
+      "IRI-based" : "AllDifferent"
+    },
+    "uri" : "http://www.w3.org/2002/07/owl#AllDifferent",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ "external" ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class8" ]
+  }, {
+    "id" : "class10",
+    "label" : {
+      "IRI-based" : "OperDecomposition"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperDecomposition",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class13" ]
+  }, {
+    "id" : "class8",
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "uri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ "external" ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ "class6" ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class15",
+    "label" : {
+      "IRI-based" : "ImplicitInterdependency"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ImplicitInterdependency",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ "class4" ],
+    "superClasses" : [ "class17" ]
+  }, {
+    "id" : "class14",
+    "label" : {
+      "IRI-based" : "ArgInterdependency"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgInterdependency",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class11" ]
+  }, {
+    "id" : "class5",
+    "label" : {
+      "IRI-based" : "ExplicitInterdependency"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ExplicitInterdependency",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ "class13", "class20" ],
+    "superClasses" : [ "class17" ]
+  }, {
+    "id" : "class3",
+    "label" : {
+      "IRI-based" : "NFRSoftgoal"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRSoftgoal",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class9" ]
+  }, {
+    "id" : "class17",
+    "label" : {
+      "IRI-based" : "Interdependency"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Interdependency",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ "class5", "class15" ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class7",
+    "label" : {
+      "IRI-based" : "Nothing"
+    },
+    "uri" : "http://www.w3.org/2002/07/owl#Nothing",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ "external" ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class9",
+    "label" : {
+      "IRI-based" : "Softgoal"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Softgoal",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ "class3", "class16" ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class2",
+    "label" : {
+      "IRI-based" : "NFRDecomposition"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFRDecomposition",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class13" ]
+  }, {
+    "id" : "class4",
+    "label" : {
+      "IRI-based" : "Correlation"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Correlation",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class15" ]
+  }, {
+    "id" : "class11",
+    "label" : {
+      "IRI-based" : "Argumentation"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Argumentation",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ "class14", "class19" ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class18",
+    "label" : {
+      "IRI-based" : "Claim"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Claim",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class16",
+    "label" : {
+      "IRI-based" : "OperSoftgoal"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#OperSoftgoal",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class9" ]
+  }, {
+    "id" : "class12",
+    "label" : {
+      "IRI-based" : "Contribution"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Contribution",
+    "comment" : { },
+    "instances" : 10,
+    "equivalent" : [ ],
+    "attributes" : [ "equivalent" ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class21",
+    "label" : {
+      "IRI-based" : "NFR_Type"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#NFR_Type",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class19",
+    "label" : {
+      "IRI-based" : "ArgSoftgoal"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#ArgSoftgoal",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ "class11" ]
+  }, {
+    "id" : "class1",
+    "label" : {
+      "IRI-based" : "Label"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Label",
+    "comment" : { },
+    "instances" : 7,
+    "equivalent" : [ ],
+    "attributes" : [ "equivalent" ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "class13",
+    "label" : {
+      "IRI-based" : "Decomposition"
+    },
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#Decomposition",
+    "comment" : { },
+    "instances" : 0,
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "union" : [ ],
+    "intersection" : [ ],
+    "complement" : [ ],
+    "subClasses" : [ "class2", "class10" ],
+    "superClasses" : [ "class5" ]
+  }, {
+    "id" : "thing1",
+    "label" : "Thing",
+    "uri" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "datatype" : [ {
+    "id" : "datatype1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype3",
+    "type" : "rdfs:Datatype"
+  } ],
+  "datatypeAttribute" : [ {
+    "id" : "datatype1",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "comment" : { },
+    "attributes" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "datatype2",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "comment" : { },
+    "attributes" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  }, {
+    "id" : "datatype3",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "comment" : { },
+    "attributes" : [ ],
+    "subClasses" : [ ],
+    "superClasses" : [ ]
+  } ],
+  "property" : [ {
+    "id" : "property22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property3",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "id" : "property22",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalHead",
+    "label" : {
+      "IRI-based" : "argSoftgoalHead"
+    },
+    "comment" : { },
+    "domain" : "class19",
+    "range" : "class9",
+    "inverse" : "property6",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property5" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property21",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecTail",
+    "label" : {
+      "IRI-based" : "operDecTail"
+    },
+    "comment" : { },
+    "domain" : "class10",
+    "range" : "class16",
+    "inverse" : "property39",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property36" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property43",
+    "uri" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "label" : {
+      "IRI-based" : "label"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "datatype3",
+    "equivalent" : [ ],
+    "attributes" : [ "external" ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property10",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#isLabelOf",
+    "label" : {
+      "IRI-based" : "isLabelOf"
+    },
+    "comment" : { },
+    "domain" : "class1",
+    "range" : "class9",
+    "inverse" : "property31",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property18",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecHeadInv",
+    "label" : {
+      "IRI-based" : "operDecHeadInv"
+    },
+    "comment" : { },
+    "domain" : "class16",
+    "range" : "class10",
+    "inverse" : "property32",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property33" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property33",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#headInv",
+    "label" : {
+      "IRI-based" : "headInv"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ "property37", "property6", "property40", "property13", "property18", "property38" ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property17",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementHead",
+    "label" : {
+      "IRI-based" : "argRefinementHead"
+    },
+    "comment" : { },
+    "domain" : "class14",
+    "range" : "class17",
+    "inverse" : "property37",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property2" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property35",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecTailInv",
+    "label" : {
+      "IRI-based" : "nfrDecTailInv"
+    },
+    "comment" : { },
+    "domain" : "class3",
+    "range" : "class2",
+    "inverse" : "property34",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property1" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property27",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationTailInv",
+    "label" : {
+      "IRI-based" : "operationalizationTailInv"
+    },
+    "comment" : { },
+    "domain" : "class16",
+    "range" : "class20",
+    "inverse" : "property30",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property1" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property38",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationHeadInv",
+    "label" : {
+      "IRI-based" : "operationalizationHeadInv"
+    },
+    "comment" : { },
+    "domain" : "class3",
+    "range" : "class20",
+    "inverse" : "property28",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property33" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property9",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationKindInv",
+    "label" : {
+      "IRI-based" : "argumentationKindInv"
+    },
+    "comment" : { },
+    "domain" : "class12",
+    "range" : "class11",
+    "inverse" : "property14",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property19",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#isSubTypeOf",
+    "label" : {
+      "IRI-based" : "isSubTypeOf"
+    },
+    "comment" : { },
+    "domain" : "class21",
+    "range" : "class21",
+    "inverse" : "property16",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property2",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#head",
+    "label" : {
+      "IRI-based" : "head"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ "property17", "property5", "property7", "property20", "property32", "property28" ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property1",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tailInv",
+    "label" : {
+      "IRI-based" : "tailInv"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ "property25", "property4", "property15", "property35", "property39", "property27" ],
+    "superproperty" : [ "property24" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property42",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#topic",
+    "label" : {
+      "IRI-based" : "topic"
+    },
+    "comment" : { },
+    "domain" : "class9",
+    "range" : "datatype2",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property6",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalHeadInv",
+    "label" : {
+      "IRI-based" : "argSoftgoalHeadInv"
+    },
+    "comment" : { },
+    "domain" : "class9",
+    "range" : "class19",
+    "inverse" : "property22",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property33" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property11",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#contributionKindInv",
+    "label" : {
+      "IRI-based" : "contributionKindInv"
+    },
+    "comment" : { },
+    "domain" : "class12",
+    "range" : "class17",
+    "inverse" : "property29",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property26",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementTail",
+    "label" : {
+      "IRI-based" : "argRefinementTail"
+    },
+    "comment" : { },
+    "domain" : "class14",
+    "range" : "class18",
+    "inverse" : "property25",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property36" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property31",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#label",
+    "label" : {
+      "IRI-based" : "label"
+    },
+    "comment" : { },
+    "domain" : "class9",
+    "range" : "class1",
+    "inverse" : "property10",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property41",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#priority",
+    "label" : {
+      "IRI-based" : "priority"
+    },
+    "comment" : { },
+    "domain" : "class9",
+    "range" : "datatype1",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property23",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#type",
+    "label" : {
+      "IRI-based" : "type"
+    },
+    "comment" : { },
+    "domain" : "class9",
+    "range" : "class21",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property39",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecTailInv",
+    "label" : {
+      "IRI-based" : "operDecTailInv"
+    },
+    "comment" : { },
+    "domain" : "class16",
+    "range" : "class10",
+    "inverse" : "property21",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property1" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property29",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#contributionKind",
+    "label" : {
+      "IRI-based" : "contributionKind"
+    },
+    "comment" : { },
+    "domain" : "class17",
+    "range" : "class12",
+    "inverse" : "property11",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property50",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class3",
+    "range" : "class9",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property51",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class16",
+    "range" : "class9",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property5",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationHead",
+    "label" : {
+      "IRI-based" : "argumentationHead"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ "property22" ],
+    "superproperty" : [ "property2" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property52",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class14",
+    "range" : "class11",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property14",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argumentationKind",
+    "label" : {
+      "IRI-based" : "argumentationKind"
+    },
+    "comment" : { },
+    "domain" : "class11",
+    "range" : "class12",
+    "inverse" : "property9",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property53",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class19",
+    "range" : "class11",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property54",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class2",
+    "range" : "class13",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property12",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationTail",
+    "label" : {
+      "IRI-based" : "correlationTail"
+    },
+    "comment" : { },
+    "domain" : "class4",
+    "range" : "class9",
+    "inverse" : "property15",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property36" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property55",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class10",
+    "range" : "class13",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property16",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#hasSubType",
+    "label" : {
+      "IRI-based" : "hasSubType"
+    },
+    "comment" : { },
+    "domain" : "class21",
+    "range" : "class21",
+    "inverse" : "property19",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property13",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecHeadInv",
+    "label" : {
+      "IRI-based" : "nfrDecHeadInv"
+    },
+    "comment" : { },
+    "domain" : "class3",
+    "range" : "class2",
+    "inverse" : "property20",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property33" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property20",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecHead",
+    "label" : {
+      "IRI-based" : "nfrDecHead"
+    },
+    "comment" : { },
+    "domain" : "class2",
+    "range" : "class3",
+    "inverse" : "property13",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property2" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property37",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementHeadInv",
+    "label" : {
+      "IRI-based" : "argRefinementHeadInv"
+    },
+    "comment" : { },
+    "domain" : "class17",
+    "range" : "class14",
+    "inverse" : "property17",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property33" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property40",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationHeadInv",
+    "label" : {
+      "IRI-based" : "correlationHeadInv"
+    },
+    "comment" : { },
+    "domain" : "class9",
+    "range" : "class4",
+    "inverse" : "property7",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property33" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property15",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationTailInv",
+    "label" : {
+      "IRI-based" : "correlationTailInv"
+    },
+    "comment" : { },
+    "domain" : "class9",
+    "range" : "class4",
+    "inverse" : "property12",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property1" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property7",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#correlationHead",
+    "label" : {
+      "IRI-based" : "correlationHead"
+    },
+    "comment" : { },
+    "domain" : "class4",
+    "range" : "class9",
+    "inverse" : "property40",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property2" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property32",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operDecHead",
+    "label" : {
+      "IRI-based" : "operDecHead"
+    },
+    "comment" : { },
+    "domain" : "class10",
+    "range" : "class16",
+    "inverse" : "property18",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property2" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property34",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#nfrDecTail",
+    "label" : {
+      "IRI-based" : "nfrDecTail"
+    },
+    "comment" : { },
+    "domain" : "class2",
+    "range" : "class3",
+    "inverse" : "property35",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property36" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property36",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#tail",
+    "label" : {
+      "IRI-based" : "tail"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ "property26", "property8", "property12", "property34", "property21", "property30" ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property30",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationTail",
+    "label" : {
+      "IRI-based" : "operationalizationTail"
+    },
+    "comment" : { },
+    "domain" : "class20",
+    "range" : "class16",
+    "inverse" : "property27",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property36" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property25",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argRefinementTailInv",
+    "label" : {
+      "IRI-based" : "argRefinementTailInv"
+    },
+    "comment" : { },
+    "domain" : "class18",
+    "range" : "class14",
+    "inverse" : "property26",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property1" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property28",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#operationalizationHead",
+    "label" : {
+      "IRI-based" : "operationalizationHead"
+    },
+    "comment" : { },
+    "domain" : "class20",
+    "range" : "class3",
+    "inverse" : "property38",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property2" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property4",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalTailInv",
+    "label" : {
+      "IRI-based" : "argSoftgoalTailInv"
+    },
+    "comment" : { },
+    "domain" : "class18",
+    "range" : "class19",
+    "inverse" : "property8",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property1" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property45",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class4",
+    "range" : "class15",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property46",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class13",
+    "range" : "class5",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property24",
+    "uri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "equivalent" : [ ],
+    "attributes" : [ "external" ],
+    "subproperty" : [ "property1" ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property44",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class6",
+    "range" : "class8",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property49",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class15",
+    "range" : "class17",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property8",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#argSoftgoalTail",
+    "label" : {
+      "IRI-based" : "argSoftgoalTail"
+    },
+    "comment" : { },
+    "domain" : "class19",
+    "range" : "class18",
+    "inverse" : "property4",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ "property36" ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property47",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class20",
+    "range" : "class5",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property48",
+    "label" : { },
+    "comment" : { },
+    "domain" : "class5",
+    "range" : "class17",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  }, {
+    "id" : "property3",
+    "uri" : "http://www.ime.uerj.br/ontologies/2012/5/NDR.owl#isTypeOf",
+    "label" : {
+      "IRI-based" : "isTypeOf"
+    },
+    "comment" : { },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "equivalent" : [ ],
+    "attributes" : [ ],
+    "subproperty" : [ ],
+    "superproperty" : [ ],
+    "disjoint" : [ ]
+  } ]
+}

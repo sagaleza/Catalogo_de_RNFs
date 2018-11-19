@@ -1,0 +1,203 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<XMI xmi.version = "1.1" xmlns:UML="href://org.omg/UML/1.3" timestamp = "Fri Feb 19 13:37:10 2016">
+<XMI.header>
+  <XMI.documentation>
+    <XMI.owner></XMI.owner>
+    <XMI.contact></XMI.contact>
+    <XMI.exporter>StarUML.XMI-Addin</XMI.exporter>
+    <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    <XMI.notice></XMI.notice>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name = "UML" xmi.version = "1.3"/>
+ </XMI.header>
+<XMI.content>
+<UML:Model xmi.id="UMLProject.1">
+  <UML:Namespace.ownedElement>
+    <UML:Package xmi.id="UMLPackage.2" name="Usability Catalogue" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="UMLClass.3" name="Usability" visibility="public" isSpecification="false" namespace="UMLPackage.2" supplierDependency="UMLDependency.8" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.4" name="Usefulness" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.8" supplierDependency="UMLDependency.9 UMLDependency.10 UMLDependency.63" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.5" name="Assure Comprehension of Information" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.63" supplierDependency="UMLDependency.58" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.6" name="Assure Applicability of Information" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.10" supplierDependency="UMLDependency.60" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.7" name="Improve Cognition" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.9" supplierDependency="UMLDependency.59" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.8" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.4" supplier="UMLClass.3"/>
+        <UML:Dependency xmi.id="UMLDependency.9" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.7" supplier="UMLClass.4"/>
+        <UML:Dependency xmi.id="UMLDependency.10" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.6" supplier="UMLClass.4"/>
+        <UML:Class xmi.id="UMLClass.11" name="Provide Appropriate Level of Information" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.12 UMLDependency.18" supplierDependency="UMLDependency.21" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.12" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.11" supplier="UMLClass.57"/>
+        <UML:Class xmi.id="UMLClass.13" name="Provide Appropriate Amount of Information" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.14 UMLDependency.19" supplierDependency="UMLDependency.22" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.14" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.13" supplier="UMLClass.57"/>
+        <UML:Class xmi.id="UMLClass.15" name="Assure Trustworthiness of Information" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.59" supplierDependency="UMLDependency.23" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.16" name="Assure Timeliness of Information" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.60 UMLDependency.61" supplierDependency="UMLDependency.24 UMLDependency.30" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.17" name="Security" visibility="public" isSpecification="false" namespace="UMLPackage.2" supplierDependency="UMLDependency.18 UMLDependency.19 UMLDependency.62 UMLDependency.67" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.18" constraint="X.90" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.11" supplier="UMLClass.17"/>
+        <UML:Dependency xmi.id="UMLDependency.19" constraint="X.94" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.13" supplier="UMLClass.17"/>
+        <UML:Class xmi.id="UMLClass.20" name="Conduct Usability Testing" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.21 UMLDependency.22 UMLDependency.23 UMLDependency.24 UMLDependency.27 UMLDependency.28" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.21" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.20" supplier="UMLClass.11"/>
+        <UML:Dependency xmi.id="UMLDependency.22" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.20" supplier="UMLClass.13"/>
+        <UML:Dependency xmi.id="UMLDependency.23" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.20" supplier="UMLClass.15"/>
+        <UML:Dependency xmi.id="UMLDependency.24" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.20" supplier="UMLClass.16"/>
+        <UML:Class xmi.id="UMLClass.25" name="Cost" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.62 UMLDependency.67" supplierDependency="UMLDependency.28 UMLDependency.52" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.26" name="Performance" visibility="public" isSpecification="false" namespace="UMLPackage.2" supplierDependency="UMLDependency.27 UMLDependency.54 UMLDependency.55" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.27" constraint="X.107" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.20" supplier="UMLClass.26"/>
+        <UML:Dependency xmi.id="UMLDependency.28" constraint="X.112" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.20" supplier="UMLClass.25"/>
+        <UML:Class xmi.id="UMLClass.29" name="Guarantee Constant Access" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.30" supplierDependency="UMLDependency.38" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.30" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.29" supplier="UMLClass.16"/>
+        <UML:Class xmi.id="UMLClass.31" name="Availability" visibility="public" isSpecification="false" namespace="UMLPackage.2" supplierDependency="UMLDependency.47 UMLDependency.48 UMLDependency.51 UMLDependency.53 UMLDependency.56 UMLDependency.61" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.32" name="Provide Continuous Access" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.38" supplierDependency="UMLDependency.39 UMLDependency.40 UMLDependency.41" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.33" name="Use Tablets" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.41 UMLDependency.45 UMLDependency.51 UMLDependency.52" supplierDependency="UMLDependency.64" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.34" name="Use PDA" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.40 UMLDependency.44 UMLDependency.54 UMLDependency.56" supplierDependency="UMLDependency.65" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.35" name="Use Desktop" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.39 UMLDependency.43 UMLDependency.55" supplierDependency="UMLDependency.49 UMLDependency.50 UMLDependency.66" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.36" name="Use Online" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.47 UMLDependency.49" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.37" name="Use Offline" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.48 UMLDependency.50" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.38" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.32" supplier="UMLClass.29"/>
+        <UML:Dependency xmi.id="UMLDependency.39" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.35" supplier="UMLClass.32"/>
+        <UML:Dependency xmi.id="UMLDependency.40" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.34" supplier="UMLClass.32"/>
+        <UML:Dependency xmi.id="UMLDependency.41" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.33" supplier="UMLClass.32"/>
+        <UML:Class xmi.id="UMLClass.42" name="Portability" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.53" supplierDependency="UMLDependency.43 UMLDependency.44 UMLDependency.45" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.43" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.35" supplier="UMLClass.42"/>
+        <UML:Dependency xmi.id="UMLDependency.44" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.34" supplier="UMLClass.42"/>
+        <UML:Dependency xmi.id="UMLDependency.45" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.33" supplier="UMLClass.42"/>
+        <UML:Class xmi.id="UMLClass.46" name="Use GUI Cognitive Aspects" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.64 UMLDependency.65 UMLDependency.66" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.47" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.36" supplier="UMLClass.31"/>
+        <UML:Dependency xmi.id="UMLDependency.48" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.37" supplier="UMLClass.31"/>
+        <UML:Dependency xmi.id="UMLDependency.49" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.36" supplier="UMLClass.35"/>
+        <UML:Dependency xmi.id="UMLDependency.50" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.37" supplier="UMLClass.35"/>
+        <UML:Dependency xmi.id="UMLDependency.51" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.33" supplier="UMLClass.31"/>
+        <UML:Dependency xmi.id="UMLDependency.52" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.33" supplier="UMLClass.25"/>
+        <UML:Dependency xmi.id="UMLDependency.53" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.42" supplier="UMLClass.31"/>
+        <UML:Dependency xmi.id="UMLDependency.54" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.34" supplier="UMLClass.26"/>
+        <UML:Dependency xmi.id="UMLDependency.55" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.35" supplier="UMLClass.26"/>
+        <UML:Dependency xmi.id="UMLDependency.56" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.34" supplier="UMLClass.31"/>
+        <UML:Class xmi.id="UMLClass.57" name="Provide Appropriate Information" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.58" supplierDependency="UMLDependency.12 UMLDependency.14" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.58" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.57" supplier="UMLClass.5"/>
+        <UML:Dependency xmi.id="UMLDependency.59" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.15" supplier="UMLClass.7"/>
+        <UML:Dependency xmi.id="UMLDependency.60" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.16" supplier="UMLClass.6"/>
+        <UML:Dependency xmi.id="UMLDependency.61" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.16" supplier="UMLClass.31"/>
+        <UML:Dependency xmi.id="UMLDependency.62" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.25" supplier="UMLClass.17"/>
+        <UML:Dependency xmi.id="UMLDependency.63" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.5" supplier="UMLClass.4"/>
+        <UML:Dependency xmi.id="UMLDependency.64" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.46" supplier="UMLClass.33"/>
+        <UML:Dependency xmi.id="UMLDependency.65" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.46" supplier="UMLClass.34"/>
+        <UML:Dependency xmi.id="UMLDependency.66" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.46" supplier="UMLClass.35"/>
+        <UML:Dependency xmi.id="UMLDependency.67" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.25" supplier="UMLClass.17"/>
+        <UML:Stereotype xmi.id="X.68" name="NFRSoftgoal" extendedElement="UMLClass.3 UMLClass.4 UMLClass.5 UMLClass.6 UMLClass.7 UMLClass.17 UMLClass.25 UMLClass.26 UMLClass.31 UMLClass.42"/>
+        <UML:Stereotype xmi.id="X.74" name="Help" extendedElement="UMLDependency.8 UMLDependency.9 UMLDependency.10 UMLDependency.47 UMLDependency.53 UMLDependency.61 UMLDependency.63 UMLDependency.64 UMLDependency.66"/>
+        <UML:Stereotype xmi.id="X.78" name="OperationalizingSoftgoal" extendedElement="UMLClass.11 UMLClass.13 UMLClass.15 UMLClass.16 UMLClass.20 UMLClass.29 UMLClass.32 UMLClass.33 UMLClass.34 UMLClass.35 UMLClass.36 UMLClass.37 UMLClass.46 UMLClass.57"/>
+        <UML:Stereotype xmi.id="X.80" name="And" extendedElement="UMLDependency.12 UMLDependency.14 UMLDependency.38 UMLDependency.39 UMLDependency.40 UMLDependency.41"/>
+        <UML:Stereotype xmi.id="X.87" name="Hurt" extendedElement="UMLDependency.18 UMLDependency.19 UMLDependency.27 UMLDependency.28 UMLDependency.48 UMLDependency.62 UMLDependency.65 UMLDependency.67"/>
+        <UML:Constraint xmi.id="X.90" name="Correlation" visibility="public" isSpecification="false" constrainedElement="UMLDependency.18">
+          <UML:Constraint.body>
+            <UML:BooleanExpression xmi.id="X.91" body=""/>
+          </UML:Constraint.body>
+        </UML:Constraint>
+        <UML:Constraint xmi.id="X.94" name="Correlation" visibility="public" isSpecification="false" constrainedElement="UMLDependency.19">
+          <UML:Constraint.body>
+            <UML:BooleanExpression xmi.id="X.95" body=""/>
+          </UML:Constraint.body>
+        </UML:Constraint>
+        <UML:Stereotype xmi.id="X.97" name="Or" extendedElement="UMLDependency.21 UMLDependency.22 UMLDependency.23 UMLDependency.24 UMLDependency.30 UMLDependency.49 UMLDependency.50"/>
+        <UML:Constraint xmi.id="X.107" name="Correlation" visibility="public" isSpecification="false" constrainedElement="UMLDependency.27">
+          <UML:Constraint.body>
+            <UML:BooleanExpression xmi.id="X.108" body=""/>
+          </UML:Constraint.body>
+        </UML:Constraint>
+        <UML:Constraint xmi.id="X.112" name="Correlation" visibility="public" isSpecification="false" constrainedElement="UMLDependency.28">
+          <UML:Constraint.body>
+            <UML:BooleanExpression xmi.id="X.113" body=""/>
+          </UML:Constraint.body>
+        </UML:Constraint>
+        <UML:Stereotype xmi.id="X.129" name="Break" extendedElement="UMLDependency.43"/>
+        <UML:Stereotype xmi.id="X.132" name="Make" extendedElement="UMLDependency.44 UMLDependency.58 UMLDependency.59"/>
+        <UML:Stereotype xmi.id="X.135" name="SomePlus" extendedElement="UMLDependency.45 UMLDependency.55 UMLDependency.60"/>
+        <UML:Stereotype xmi.id="X.145" name="SomeMinus" extendedElement="UMLDependency.51 UMLDependency.52 UMLDependency.54 UMLDependency.56"/>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+  </UML:Namespace.ownedElement>
+</UML:Model>
+<UML:TaggedValue xmi.id="X.69" tag="Type" value="Usability" modelElement="UMLClass.3"/>
+<UML:TaggedValue xmi.id="X.70" tag="Type" value="Usefulness" modelElement="UMLClass.4"/>
+<UML:TaggedValue xmi.id="X.71" tag="Type" value="Assure Comprehension of Information" modelElement="UMLClass.5"/>
+<UML:TaggedValue xmi.id="X.72" tag="Type" value="Assure Applicability of Information" modelElement="UMLClass.6"/>
+<UML:TaggedValue xmi.id="X.73" tag="Type" value="Improve Cognition" modelElement="UMLClass.7"/>
+<UML:TaggedValue xmi.id="X.75" tag="Label" value="Satisficed" modelElement="UMLDependency.8"/>
+<UML:TaggedValue xmi.id="X.76" tag="Label" value="Satisficed" modelElement="UMLDependency.9"/>
+<UML:TaggedValue xmi.id="X.77" tag="Label" value="Satisficed" modelElement="UMLDependency.10"/>
+<UML:TaggedValue xmi.id="X.79" tag="Type" value="Provide Appropriate Level of Information" modelElement="UMLClass.11"/>
+<UML:TaggedValue xmi.id="X.81" tag="Label" value="Satisficed" modelElement="UMLDependency.12"/>
+<UML:TaggedValue xmi.id="X.82" tag="Type" value="Provide Appropriate Amount of Information" modelElement="UMLClass.13"/>
+<UML:TaggedValue xmi.id="X.83" tag="Label" value="Unknown" modelElement="UMLDependency.14"/>
+<UML:TaggedValue xmi.id="X.84" tag="Type" value="Assure Trustworthiness of Information" modelElement="UMLClass.15"/>
+<UML:TaggedValue xmi.id="X.85" tag="Type" value="Assure Timeliness of Information" modelElement="UMLClass.16"/>
+<UML:TaggedValue xmi.id="X.86" tag="Type" value="Security" modelElement="UMLClass.17"/>
+<UML:TaggedValue xmi.id="X.88" tag="Label" value="Satisficed" modelElement="UMLDependency.18"/>
+<UML:TaggedValue xmi.id="X.89" tag="Consequence" value="Yes" modelElement="UMLDependency.18"/>
+<UML:TaggedValue xmi.id="X.92" tag="Label" value="Satisficed" modelElement="UMLDependency.19"/>
+<UML:TaggedValue xmi.id="X.93" tag="Consequence" value="Yes" modelElement="UMLDependency.19"/>
+<UML:TaggedValue xmi.id="X.96" tag="Type" value="Conduct Usability Testing" modelElement="UMLClass.20"/>
+<UML:TaggedValue xmi.id="X.98" tag="Label" value="Satisficed" modelElement="UMLDependency.21"/>
+<UML:TaggedValue xmi.id="X.99" tag="Label" value="Satisficed" modelElement="UMLDependency.22"/>
+<UML:TaggedValue xmi.id="X.100" tag="Label" value="Satisficed" modelElement="UMLDependency.23"/>
+<UML:TaggedValue xmi.id="X.101" tag="Label" value="Satisficed" modelElement="UMLDependency.24"/>
+<UML:TaggedValue xmi.id="X.102" tag="Type" value="Cost" modelElement="UMLClass.25"/>
+<UML:TaggedValue xmi.id="X.103" tag="Type" value="Performance" modelElement="UMLClass.26"/>
+<UML:TaggedValue xmi.id="X.104" tag="Label" value="Unknown" modelElement="UMLClass.26"/>
+<UML:TaggedValue xmi.id="X.105" tag="Label" value="Satisficed" modelElement="UMLDependency.27"/>
+<UML:TaggedValue xmi.id="X.106" tag="Consequence" value="Yes" modelElement="UMLDependency.27"/>
+<UML:TaggedValue xmi.id="X.109" tag="Label" value="Satisficed" modelElement="UMLDependency.28"/>
+<UML:TaggedValue xmi.id="X.110" tag="SelectionInfoDisplay" value="Off" modelElement="UMLDependency.28"/>
+<UML:TaggedValue xmi.id="X.111" tag="Consequence" value="Yes" modelElement="UMLDependency.28"/>
+<UML:TaggedValue xmi.id="X.114" tag="Type" value="Guarantee Constant Access" modelElement="UMLClass.29"/>
+<UML:TaggedValue xmi.id="X.115" tag="Label" value="Satisficed" modelElement="UMLDependency.30"/>
+<UML:TaggedValue xmi.id="X.116" tag="Type" value="Availability" modelElement="UMLClass.31"/>
+<UML:TaggedValue xmi.id="X.117" tag="Topic" value="Information" modelElement="UMLClass.31"/>
+<UML:TaggedValue xmi.id="X.118" tag="Type" value="Provide Continuous Access" modelElement="UMLClass.32"/>
+<UML:TaggedValue xmi.id="X.119" tag="Type" value="Use Tablets" modelElement="UMLClass.33"/>
+<UML:TaggedValue xmi.id="X.120" tag="Type" value="Use PDA" modelElement="UMLClass.34"/>
+<UML:TaggedValue xmi.id="X.121" tag="Type" value="Use Desktop" modelElement="UMLClass.35"/>
+<UML:TaggedValue xmi.id="X.122" tag="Type" value="Use Online" modelElement="UMLClass.36"/>
+<UML:TaggedValue xmi.id="X.123" tag="Type" value="Use Offline" modelElement="UMLClass.37"/>
+<UML:TaggedValue xmi.id="X.124" tag="Label" value="Satisficed" modelElement="UMLDependency.38"/>
+<UML:TaggedValue xmi.id="X.125" tag="Label" value="Satisficed" modelElement="UMLDependency.39"/>
+<UML:TaggedValue xmi.id="X.126" tag="Label" value="Satisficed" modelElement="UMLDependency.40"/>
+<UML:TaggedValue xmi.id="X.127" tag="Label" value="Satisficed" modelElement="UMLDependency.41"/>
+<UML:TaggedValue xmi.id="X.128" tag="Type" value="Portability" modelElement="UMLClass.42"/>
+<UML:TaggedValue xmi.id="X.130" tag="Label" value="Satisficed" modelElement="UMLDependency.43"/>
+<UML:TaggedValue xmi.id="X.131" tag="Consequence" value="Yes" modelElement="UMLDependency.43"/>
+<UML:TaggedValue xmi.id="X.133" tag="Label" value="Satisficed" modelElement="UMLDependency.44"/>
+<UML:TaggedValue xmi.id="X.134" tag="Consequence" value="Yes" modelElement="UMLDependency.44"/>
+<UML:TaggedValue xmi.id="X.136" tag="Label" value="Satisficed" modelElement="UMLDependency.45"/>
+<UML:TaggedValue xmi.id="X.137" tag="Consequence" value="Yes" modelElement="UMLDependency.45"/>
+<UML:TaggedValue xmi.id="X.138" tag="Type" value="Use GUI Cognitive Aspects" modelElement="UMLClass.46"/>
+<UML:TaggedValue xmi.id="X.139" tag="Label" value="Satisficed" modelElement="UMLDependency.47"/>
+<UML:TaggedValue xmi.id="X.140" tag="Consequence" value="Yes" modelElement="UMLDependency.47"/>
+<UML:TaggedValue xmi.id="X.141" tag="Label" value="Satisficed" modelElement="UMLDependency.48"/>
+<UML:TaggedValue xmi.id="X.142" tag="Consequence" value="Yes" modelElement="UMLDependency.48"/>
+<UML:TaggedValue xmi.id="X.143" tag="Label" value="Satisficed" modelElement="UMLDependency.49"/>
+<UML:TaggedValue xmi.id="X.144" tag="Label" value="Satisficed" modelElement="UMLDependency.50"/>
+<UML:TaggedValue xmi.id="X.146" tag="Label" value="Satisficed" modelElement="UMLDependency.51"/>
+<UML:TaggedValue xmi.id="X.147" tag="Consequence" value="Yes" modelElement="UMLDependency.51"/>
+<UML:TaggedValue xmi.id="X.148" tag="Label" value="Satisficed" modelElement="UMLDependency.52"/>
+<UML:TaggedValue xmi.id="X.149" tag="Consequence" value="Yes" modelElement="UMLDependency.52"/>
+<UML:TaggedValue xmi.id="X.150" tag="Label" value="Satisficed" modelElement="UMLDependency.53"/>
+<UML:TaggedValue xmi.id="X.151" tag="Consequence" value="Yes" modelElement="UMLDependency.53"/>
+<UML:TaggedValue xmi.id="X.152" tag="Label" value="Satisficed" modelElement="UMLDependency.54"/>
+<UML:TaggedValue xmi.id="X.153" tag="Consequence" value="Yes" modelElement="UMLDependency.54"/>
+<UML:TaggedValue xmi.id="X.154" tag="Label" value="Satisficed" modelElement="UMLDependency.55"/>
+<UML:TaggedValue xmi.id="X.155" tag="Consequence" value="Yes" modelElement="UMLDependency.55"/>
+<UML:TaggedValue xmi.id="X.156" tag="Label" value="Satisficed" modelElement="UMLDependency.56"/>
+<UML:TaggedValue xmi.id="X.157" tag="Consequence" value="Yes" modelElement="UMLDependency.56"/>
+<UML:TaggedValue xmi.id="X.158" tag="Type" value="Provide Appropriate Information" modelElement="UMLClass.57"/>
+<UML:TaggedValue xmi.id="X.159" tag="Label" value="Satisficed" modelElement="UMLDependency.58"/>
+<UML:TaggedValue xmi.id="X.160" tag="Label" value="Satisficed" modelElement="UMLDependency.59"/>
+<UML:TaggedValue xmi.id="X.161" tag="Label" value="Satisficed" modelElement="UMLDependency.60"/>
+<UML:TaggedValue xmi.id="X.162" tag="Label" value="Satisficed" modelElement="UMLDependency.61"/>
+<UML:TaggedValue xmi.id="X.163" tag="Consequence" value="Yes" modelElement="UMLDependency.61"/>
+<UML:TaggedValue xmi.id="X.164" tag="Label" value="Satisficed" modelElement="UMLDependency.62"/>
+<UML:TaggedValue xmi.id="X.165" tag="Label" value="Satisficed" modelElement="UMLDependency.63"/>
+<UML:TaggedValue xmi.id="X.166" tag="Label" value="Satisficed" modelElement="UMLDependency.64"/>
+<UML:TaggedValue xmi.id="X.167" tag="Label" value="Satisficed" modelElement="UMLDependency.65"/>
+<UML:TaggedValue xmi.id="X.168" tag="Label" value="Satisficed" modelElement="UMLDependency.66"/>
+<UML:TaggedValue xmi.id="X.169" tag="Label" value="Satisficed" modelElement="UMLDependency.67"/>
+<UML:TaggedValue xmi.id="X.170" tag="Consequence" value="Yes" modelElement="UMLDependency.67"/>
+</XMI.content>
+</XMI>

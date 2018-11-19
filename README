@@ -1,0 +1,21 @@
+NDRTool is the core of NDR Framework.
+
+This application has a microservice architecture that relies on PlayFramework. It runs from a single JAR file with a self-contained application server.
+
+PlayFramework 2.3.8
+Apache Fuseki Server 2.3.0
+Apache Jena 3.0
+
+========================================
+
+More info:
+
+Towards a Tool to Help Exploring Existing Non-Functional Requirements Solution Patterns
+https://ieeexplore.ieee.org/iel7/8053951/8054794/08054859.pdf
+
+An Initial Approach to Reuse Non-Functional Requirements Knowledge.
+https://www.semanticscholar.org/paper/An-Initial-Approach-to-Reuse-Non-Functional-Veleda-Cysneiros/558a962255ca70a7f0eb912ad902c128a1fe23b4/pdf
+
+Towards an Ontology-Based Approach for Reusing Non-Functional Requirements Knowledge
+https://yorkspace.library.yorku.ca/xmlui/handle/10315/33428
+

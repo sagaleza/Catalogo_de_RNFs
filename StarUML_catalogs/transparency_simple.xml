@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<XMI xmi.version = "1.1" xmlns:UML="href://org.omg/UML/1.3" timestamp = "Tue Jan 19 18:6:33 2016">
+<XMI.header>
+  <XMI.documentation>
+    <XMI.owner></XMI.owner>
+    <XMI.contact></XMI.contact>
+    <XMI.exporter>StarUML.XMI-Addin</XMI.exporter>
+    <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    <XMI.notice></XMI.notice>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name = "UML" xmi.version = "1.3"/>
+ </XMI.header>
+<XMI.content>
+<UML:Model xmi.id="UMLProject.1">
+  <UML:Namespace.ownedElement>
+    <UML:Package xmi.id="UMLPackage.2" name="Transparency package" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="UMLClass.3" name="Transparency" visibility="public" isSpecification="false" namespace="UMLPackage.2" supplierDependency="UMLDependency.5" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Class xmi.id="UMLClass.4" name="Auditing" visibility="public" isSpecification="false" namespace="UMLPackage.2" clientDependency="UMLDependency.5" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+        <UML:Dependency xmi.id="UMLDependency.5" name="" visibility="public" isSpecification="false" namespace="UMLPackage.2" client="UMLClass.4" supplier="UMLClass.3"/>
+        <UML:Stereotype xmi.id="X.7" name="NFRSoftgoal" extendedElement="UMLClass.3 UMLClass.4"/>
+        <UML:Stereotype xmi.id="X.11" name="Make" extendedElement="UMLDependency.5"/>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Package xmi.id="UMLPackage.6" name="test" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false"/>
+  </UML:Namespace.ownedElement>
+</UML:Model>
+<UML:TaggedValue xmi.id="X.8" tag="Type" value="Traceability" modelElement="UMLClass.3"/>
+<UML:TaggedValue xmi.id="X.9" tag="Label" value="Unknown" modelElement="UMLClass.3"/>
+<UML:TaggedValue xmi.id="X.10" tag="Type" value="Traceability" modelElement="UMLClass.4"/>
+<UML:TaggedValue xmi.id="X.12" tag="Label" value="Satisficed" modelElement="UMLDependency.5"/>
+</XMI.content>
+</XMI>
